@@ -1,0 +1,10 @@
+Ćwiczenie UML_01.00
+Utwórz diagram klas(na jego podstawie program), przy następujących założeniach:
+- program opisujący figury geometryczne, np.: okrąg, trójkąt, kwadrad, prostokąt, romb, pięciokąt, sześciokąt, prostopadlościan, sześcian, kula, graniastośłup, stożek;
+- program powinien posiadać/obliczać podstawowe cechy figur np.: kolor oraz przezroczystość, liczba kątów, suma kątów, obwód, pole powierzchini, promień kątów, zajmowana prostokątna przestzeń na płaczszyźnie, długość najkrótszej i najdłuższej przekątnej, liczba wierzchołków;
+- założenia :
+	- minimalizacja powtarzania kodu
+	- klasa uruchamieniowa powinna przechowywać tablicę wszystkich dodaych obieków
+	- każda figura powinna mieć dokładne informacje o położeniu, uwzględniając obrót
+	- możliwe kopiowanie obiektu (tworząc jego nową instancję)
+	- każda figura powinna posiadać własne unikalne id 
