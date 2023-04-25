@@ -6,8 +6,16 @@ public class Figura {
     protected String przezroczystosc;
     protected int obwod;
     protected int pole_powierzchni;
-    protected int promien_katow;
     protected int zajmowana_przestrzen;
+
+    public Figura(int id, String kolor, String przezroczystosc, int obwod, int pole_powierzchni) {
+        this.id = id;
+        this.kolor = kolor;
+        this.przezroczystosc = przezroczystosc;
+        this.obwod = obwod;
+        this.pole_powierzchni = pole_powierzchni;
+        this.zajmowana_przestrzen = pole_powierzchni;
+    }
 
     public int getId() {
         return id;
@@ -49,14 +57,6 @@ public class Figura {
         this.pole_powierzchni = pole_powierzchni;
     }
 
-    public int getPromien_katow() {
-        return promien_katow;
-    }
-
-    public void setPromien_katow(int promien_katow) {
-        this.promien_katow = promien_katow;
-    }
-
     public int getZajmowana_przestrzen() {
         return zajmowana_przestrzen;
     }
@@ -66,6 +66,6 @@ public class Figura {
     }
 
     protected String dane(){
-        return String.format("id: %s, obwod: %s, Pole powierzchni: %s, Promien kątów: %s, kolor: %s, przeźroczystość: %s, zajmowana przestrzeń: %s", this.getId(), this.getObwod(), this.getPole_powierzchni(), this.getPromien_katow(), this.getKolor(), this.getPrzezroczystosc(), this.getZajmowana_przestrzen());
+        return String.format("id: %s, obwod: %s, Pole powierzchni: %s, kolor: %s, przezroczysty: %s, zajmowana przestrzeń: %s", this.getId(), this.getObwod(), this.getPole_powierzchni(), this.getKolor(), this.getPrzezroczystosc(), this.getZajmowana_przestrzen());
     }
 }
