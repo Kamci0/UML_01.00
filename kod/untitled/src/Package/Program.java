@@ -1,6 +1,12 @@
 package Package;
 
+/**
+ * klasa Program zawierajaca metode main
+ */
 public class Program {
+    /**
+     * metoda main
+     */
     public static void main(String[] args) {
         Figura[] figury = {
                 new Kula(0, "czarny", "nie" , 12),
@@ -9,7 +15,7 @@ public class Program {
                 new Szescian(3, "#F00", "nie", 9),
                 new Stozek(4, "czerwony", "tak", 2, 9),
                 new Okrag(5, "zielony", "tak", 2),
-                new Trojkat(6,"biały", "tak", 5,3,5,6),
+                new Trojkat(6,"bialy", "tak", 5,3,5,6),
                 new Kwadrat(7,"#FF00FF", "nie", 23),
                 new Prostokat(8, "rozowy", "tak", 3,9),
                 new Pieciokat(9,"#969", "nie", 6,7,3,2,90),
